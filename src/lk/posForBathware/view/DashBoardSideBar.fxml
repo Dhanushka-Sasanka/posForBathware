@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="758.0" prefWidth="1366.0" style="-fx-background-color: FFFFFFF;" styleClass="sideBar" stylesheets="@../style/dashboardsidebar.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.posForBathware.controller.DashBoardSideBarController">
+   <children>
+      <VBox layoutX="-2.0" layoutY="102.0" prefHeight="661.0" prefWidth="253.0" styleClass="sideBar" stylesheets="@../style/dashboardsidebar.css">
+         <children>
+            <HBox layoutX="10.0" layoutY="97.0" prefHeight="54.0" prefWidth="253.0" styleClass="voxPnanl" stylesheets="@../style/dashboardsidebar.css">
+               <children>
+                  <JFXButton onAction="#btnSales" prefHeight="66.0" prefWidth="254.0" styleClass="sideBar-user-btns" stylesheets="@../style/dashboardsidebar.css">
+                     <graphic>
+                        <Label prefHeight="54.0" prefWidth="240.0" styleClass="btn" text="SALES" textFill="#63c4ff">
+                           <graphic>
+                              <ImageView fitHeight="49.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/Sales%20Performance_50px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="253.0" styleClass="voxPnanl" stylesheets="@../style/dashboardsidebar.css">
+               <children>
+                  <JFXButton fx:id="btnContacts" onAction="#btnAction" prefHeight="66.0" prefWidth="254.0" styleClass="sideBar-user-btns" stylesheets="@../style/dashboardsidebar.css">
+                     <graphic>
+                        <Label prefHeight="54.0" prefWidth="240.0" styleClass="btn" text="CONTACTS" textFill="#63c4ff">
+                           <graphic>
+                              <ImageView fitHeight="48.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/Add%20User%20Group%20Man%20Man_50px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="20.0" />
+                           </font></Label>
+                     </graphic>                      
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="151.0" prefHeight="54.0" prefWidth="253.0" styleClass="voxPnanl" stylesheets="@../style/dashboardsidebar.css">
+               <children>
+                  <JFXButton onAction="#btnPurchase" prefHeight="66.0" prefWidth="254.0" styleClass="sideBar-user-btns" stylesheets="@../style/dashboardsidebar.css">
+                     <graphic>
+                        <Label prefHeight="54.0" prefWidth="240.0" styleClass="btn" text="PURCHASE" textFill="#63c4ff">
+                           <graphic>
+                              <ImageView fitHeight="48.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/US%20Dollar_50px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="205.0" prefHeight="54.0" prefWidth="253.0" styleClass="voxPnanl" stylesheets="@../style/dashboardsidebar.css">
+               <children>
+                  <JFXButton onAction="#btnItem" prefHeight="66.0" prefWidth="254.0" styleClass="sideBar-user-btns" stylesheets="@../style/dashboardsidebar.css">
+                     <graphic>
+                        <Label prefHeight="54.0" prefWidth="240.0" styleClass="btn" text="ITEMS" textFill="#63c4ff">
+                           <graphic>
+                              <ImageView fitHeight="101.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/Shopping%20Bag_50px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="259.0" prefHeight="54.0" prefWidth="253.0" styleClass="voxPnanl" stylesheets="@../style/dashboardsidebar.css">
+               <children>
+                  <JFXButton onAction="#btnGRN" prefHeight="66.0" prefWidth="254.0" styleClass="sideBar-user-btns" stylesheets="@../style/dashboardsidebar.css">
+                     <graphic>
+                        <Label prefHeight="54.0" prefWidth="240.0" styleClass="btn" text="G.R.N NOTES" textFill="#63c4ff">
+                           <graphic>
+                              <ImageView fitHeight="48.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/Purchase%20Order_52px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="313.0" prefHeight="54.0" prefWidth="253.0" styleClass="btn" stylesheets="@../style/dashboardsidebar.css">
+               <children>
+                  <JFXButton onAction="#btnSRN" prefHeight="66.0" prefWidth="254.0" styleClass="sideBar-user-btns" stylesheets="@../style/dashboardsidebar.css">
+                     <graphic>
+                        <Label prefHeight="54.0" prefWidth="240.0" styleClass="btn" text="S.R.N NOTES" textFill="#63c4ff">
+                           <graphic>
+                              <ImageView fitHeight="48.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/Reply%20Arrow_52px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="367.0" prefHeight="54.0" prefWidth="253.0" styleClass="btn" stylesheets="@../style/dashboardsidebar.css">
+               <children>
+                  <JFXButton onAction="#btnDamage" prefHeight="66.0" prefWidth="254.0" styleClass="sideBar-user-btns" stylesheets="@../style/dashboardsidebar.css">
+                     <graphic>
+                        <Label prefHeight="54.0" prefWidth="240.0" styleClass="btn" text="DAMAGES" textFill="#63c4ff">
+                           <graphic>
+                              <ImageView fitHeight="48.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/Garden%20Gloves_52px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="421.0" prefHeight="54.0" prefWidth="253.0" styleClass="btn" stylesheets="@../style/dashboardsidebar.css">
+               <children>
+                  <JFXButton onAction="#btnPayments" prefHeight="66.0" prefWidth="254.0" styleClass="sideBar-user-btns" stylesheets="@../style/dashboardsidebar.css">
+                     <graphic>
+                        <Label prefHeight="54.0" prefWidth="240.0" styleClass="btn" text="PAYMENTS" textFill="#63c4ff">
+                           <graphic>
+                              <ImageView fitHeight="47.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/Bullish_64px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="475.0" prefHeight="54.0" prefWidth="253.0" styleClass="voxPnanl" stylesheets="@../style/dashboardsidebar.css">
+               <children>
+                  <JFXButton onAction="#btnReports" prefHeight="66.0" prefWidth="254.0" styleClass="sideBar-user-btns" stylesheets="@../style/dashboardsidebar.css">
+                     <graphic>
+                        <Label prefHeight="54.0" prefWidth="240.0" styleClass="btn" text="REPORTS" textFill="#63c4ff">
+                           <graphic>
+                              <ImageView fitHeight="48.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/Urgent%20Message_64px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="529.0" prefHeight="54.0" prefWidth="253.0" styleClass="voxPnanl" stylesheets="@../style/dashboardsidebar.css">
+               <children>
+                  <JFXButton onAction="#btnSystem" prefHeight="66.0" prefWidth="254.0" styleClass="sideBar-user-btns" stylesheets="@../style/dashboardsidebar.css">
+                     <graphic>
+                        <Label prefHeight="54.0" prefWidth="240.0" styleClass="btn" text="SYSTEM" textFill="#63c4ff">
+                           <graphic>
+                              <ImageView fitHeight="48.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/Services_48px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="dashAnchor" layoutX="252.0" layoutY="101.0" prefHeight="661.0" prefWidth="1120.0" stylesheets="@../style/dashboardsidebar.css" />
+      <AnchorPane layoutX="-1.0" prefHeight="109.0" prefWidth="1366.0">
+         <children>
+            <ImageView fitHeight="101.0" fitWidth="1366.0" layoutY="-1.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../image/wallpaper2you_505211.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutY="-1.0" prefHeight="109.0" prefWidth="1366.0" stylesheets="@../style/dashboardsidebar.css">
+               <children>
+                  <Label contentDisplay="CENTER" layoutX="428.0" layoutY="15.0" prefHeight="68.0" prefWidth="84.0" text="Core-">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="92.0" fitWidth="172.0" layoutX="597.0" layoutY="3.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../image/images.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="TOP" layoutY="18.0" prefHeight="62.0" prefWidth="253.0" text="Dashboard" textAlignment="JUSTIFY" textFill="#1111ee">
+                     <font>
+                        <Font name="Algerian" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="502.0" layoutY="26.0" prefHeight="44.0" prefWidth="70.0" text="Biz" textFill="#f89408">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="248.0" layoutY="1.0" orientation="VERTICAL" prefHeight="101.0" prefWidth="6.0" />
+               </children>
+            </Pane>
+            <JFXButton fx:id="btnSignout" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="1298.0" layoutY="25.0" minWidth="37.0" onAction="#btnSignoutAction" prefHeight="44.0" prefWidth="37.0" textFill="#7aceff">
+               <cursor>
+                  <Cursor fx:constant="NONE" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Logout%20Rounded%20Up_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Separator layoutX="1270.0" layoutY="1.0" orientation="VERTICAL" prefHeight="92.0" prefWidth="6.0" />
+            <Label layoutX="1216.0" layoutY="38.0" prefHeight="19.0" prefWidth="54.0" text="Online">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="22.0" fitWidth="21.0" layoutX="1178.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Connection%20Status%20On_48px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,14 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+
+.cerclePanel{
+
+    -fx-background-radius: 100%;
+    -fx-border-radius: 100%;
+    -fx-border-width: 10px;
+
+}
+
+

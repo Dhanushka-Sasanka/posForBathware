@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="770.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="lk.ijse.posForBathware.controller.DashboardController">
+    <stylesheets>
+        <URL value="@/lk/ijse/posForBathware/style/dashboard.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutY="-14.0" prefHeight="655.0" prefWidth="197.0">
+         <children>
+            <ScrollPane layoutY="87.0" prefHeight="557.0" prefWidth="189.0" vvalue="1.0">
+               <content>
+                  <VBox prefHeight="561.0" prefWidth="198.0">
+                     <children>
+                        <Label prefHeight="146.0" prefWidth="184.0" text="Label" />
+                        <Label prefHeight="146.0" prefWidth="184.0" text="Label" />
+                        <Label prefHeight="146.0" prefWidth="184.0" text="Label" />
+                        <Label prefHeight="146.0" prefWidth="184.0" text="Label" />
+                        <Label prefHeight="146.0" prefWidth="184.0" text="Label" />
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" prefHeight="84.0" prefWidth="177.0" text="Dashboard" textAlignment="JUSTIFY" textFill="#1f80b5">
+         <font>
+            <Font name="Algerian" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

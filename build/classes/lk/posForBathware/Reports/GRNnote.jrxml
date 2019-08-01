@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2018-07-29T06:27:49 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="GRNnote" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="84b33f58-e303-406d-8522-f4b397137204">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="damged"/>
+	<queryString language="SQL">
+		<![CDATA[select grn.grnId , grn.discription, grn.date ,grndetail.itemCode ,grnDetail.qty ,grnDetail.unitprice from grn Inner join grnDetail on grn.grnid = grnDetail.grnId]]>
+	</queryString>
+	<field name="grnId" class="java.lang.String"/>
+	<field name="discription" class="java.lang.String"/>
+	<field name="date" class="java.sql.Date"/>
+	<field name="itemCode" class="java.lang.String"/>
+	<field name="qty" class="java.lang.Integer"/>
+	<field name="unitprice" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="20" y="0" width="180" height="40" forecolor="#496CEB" uuid="049b9f0e-de2e-42f9-b6d7-8babeeb14354"/>
+				<textElement>
+					<font size="24" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[G.R.N Notes]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="32" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="-10" width="95" height="30" uuid="f91e7c65-342a-4e89-a437-828c21c76276"/>
+				<box>
+					<pen lineColor="#FF9391"/>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GRN ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="95" y="-10" width="92" height="30" uuid="778310e1-7a9a-4064-8250-ad5adf3e2178"/>
+				<box>
+					<pen lineColor="#FF9391"/>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Description]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="187" y="-10" width="92" height="30" uuid="64e7bf10-de25-4d68-8690-0667624359ab"/>
+				<box>
+					<pen lineColor="#FF9391"/>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="-10" width="92" height="30" uuid="e3978c9d-5414-46e0-b605-31456ede167d"/>
+				<box>
+					<pen lineColor="#FF9391"/>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Item Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="371" y="-10" width="92" height="30" uuid="7f8ce6ac-ec6c-4d80-9534-8fec78fe96b7"/>
+				<box>
+					<pen lineColor="#FF9391"/>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Qty]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="463" y="-10" width="92" height="30" uuid="b903ebaa-8e08-46cd-855d-948c5c507712"/>
+				<box>
+					<pen lineColor="#FF9391"/>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Unitprice]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="44" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="95" height="30" uuid="f345f390-7fbf-4cb7-8103-4c23866e7f4a"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{grnId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="95" y="0" width="92" height="30" uuid="084343e4-afa3-4421-9151-024dbb1e21dd"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{discription}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="187" y="0" width="92" height="30" uuid="4486bb5f-4e8d-42c9-80a5-213ab838c080"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="0" width="92" height="30" uuid="514db48b-d796-4ff2-86e1-c1177a66e0f4"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{itemCode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="371" y="0" width="92" height="30" uuid="eae90c8f-6b1c-43de-ab36-9daed3c8a6e3"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{qty}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="463" y="0" width="92" height="30" uuid="ff4c21fe-082f-4b37-8e15-62774dec39ea"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{unitprice}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

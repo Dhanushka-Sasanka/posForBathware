@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="661.0" prefWidth="1120.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="lk.posForBathware.controller.ReportsController">
+   <children>
+      <ImageView fitHeight="661.0" fitWidth="1120.0" layoutX="3.0" layoutY="3.0" opacity="0.3" pickOnBounds="true" smooth="false" style="-fx-background-color: #5BC0DE;">
+         <image>
+            <Image url="@../image/acc.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="65.0" layoutY="122.0" prefHeight="496.0" prefWidth="293.0">
+         <children>
+            <VBox prefHeight="496.0" prefWidth="293.0">
+               <children>
+                  <JFXButton fx:id="btnAllInvoices" onAction="#btnAllInvoices" prefHeight="34.0" prefWidth="295.0" style="-fx-background-color: #5BC0DE;" styleClass="btn" stylesheets="@../style/addcustomerform.css" text="All Invoices" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="25.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnGrnNotes" layoutX="10.0" layoutY="10.0" onAction="#btnGrnNotes" prefHeight="34.0" prefWidth="295.0" style="-fx-background-color: #5BC0DE;" styleClass="btn" stylesheets="@../style/addcustomerform.css" text="GRN Notes" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="25.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnSrnNotes" layoutX="10.0" layoutY="44.0" onAction="#btnSrnNotes" prefHeight="34.0" prefWidth="295.0" style="-fx-background-color: #5BC0DE;" styleClass="btn" stylesheets="@../style/addcustomerform.css" text="SRN Notes" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="25.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnItemDeatil" layoutX="10.0" layoutY="78.0" onAction="#btntemDetail" prefHeight="34.0" prefWidth="295.0" style="-fx-background-color: #5BC0DE;" styleClass="btn" stylesheets="@../style/addcustomerform.css" text="Item Details" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="25.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnDamageItemRep" layoutX="10.0" layoutY="112.0" onAction="#btnDamageItemRep" prefHeight="34.0" prefWidth="295.0" style="-fx-background-color: #5BC0DE;" styleClass="btn" stylesheets="@../style/addcustomerform.css" text="Damage Items" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="25.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="brnAddTable11111" layoutX="10.0" layoutY="146.0" onAction="#btnAddTable" prefHeight="34.0" prefWidth="295.0" style="-fx-background-color: #5BC0DE;" styleClass="btn" stylesheets="@../style/addcustomerform.css" text="Supplier Orders" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="25.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnCreditCustomers" layoutX="10.0" layoutY="180.0" onAction="#btnCreditCustomer" prefHeight="34.0" prefWidth="295.0" style="-fx-background-color: #5BC0DE;" styleClass="btn" stylesheets="@../style/addcustomerform.css" text="Credit Customers" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="25.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="brnAddTable1111111" layoutX="10.0" layoutY="364.0" onAction="#btnAddTable" prefHeight="34.0" prefWidth="295.0" style="-fx-background-color: #5BC0DE;" styleClass="btn" stylesheets="@../style/addcustomerform.css" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <Label layoutX="65.0" layoutY="34.0" prefHeight="47.0" prefWidth="222.0" text="Reports" textFill="#756314">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <VBox layoutX="437.0" layoutY="122.0" prefHeight="496.0" prefWidth="293.0">
+         <children>
+            <JFXButton fx:id="brnAddTable1" onAction="#btnAddTable" prefHeight="34.0" prefWidth="295.0" style="-fx-background-color: #5BC0DE;" styleClass="btn" stylesheets="@../style/addcustomerform.css" text="All Invoices" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="brnAddTable11" layoutX="10.0" layoutY="10.0" onAction="#btnAddTable" prefHeight="34.0" prefWidth="295.0" style="-fx-background-color: #5BC0DE;" styleClass="btn" stylesheets="@../style/addcustomerform.css" text="GRN Notes" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="brnAddTable111" layoutX="10.0" layoutY="44.0" onAction="#btnAddTable" prefHeight="34.0" prefWidth="295.0" style="-fx-background-color: #5BC0DE;" styleClass="btn" stylesheets="@../style/addcustomerform.css" text="SRN Notes" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="brnAddTable1111" layoutX="10.0" layoutY="78.0" onAction="#btnAddTable" prefHeight="34.0" prefWidth="295.0" style="-fx-background-color: #5BC0DE;" styleClass="btn" stylesheets="@../style/addcustomerform.css" text="Item Details" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="brnAddTable11111" layoutX="10.0" layoutY="112.0" onAction="#btnAddTable" prefHeight="34.0" prefWidth="295.0" style="-fx-background-color: #5BC0DE;" styleClass="btn" stylesheets="@../style/addcustomerform.css" text="Damage Items" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="brnAddTable111111" layoutX="10.0" layoutY="146.0" onAction="#btnAddTable" prefHeight="34.0" prefWidth="295.0" style="-fx-background-color: #5BC0DE;" styleClass="btn" stylesheets="@../style/addcustomerform.css" text="Supplier Orders" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="brnAddTable1111111" layoutX="10.0" layoutY="180.0" onAction="#btnAddTable" prefHeight="34.0" prefWidth="295.0" style="-fx-background-color: #5BC0DE;" styleClass="btn" stylesheets="@../style/addcustomerform.css" text="Credit Customers" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="brnAddTable11111111" layoutX="10.0" layoutY="364.0" onAction="#btnAddTable" prefHeight="34.0" prefWidth="295.0" style="-fx-background-color: #5BC0DE;" styleClass="btn" stylesheets="@../style/addcustomerform.css" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+      <JFXDatePicker fx:id="reportDate" layoutX="890.0" layoutY="49.0" />
+   </children>
+</AnchorPane>

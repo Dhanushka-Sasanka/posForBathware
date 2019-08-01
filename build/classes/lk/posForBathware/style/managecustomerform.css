@@ -1,0 +1,33 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.jfx-button{
+    -fx-background-color: #dddddd;
+}
+
+#lblMainNav:hover{
+    -fx-underline: true;
+}
+
+.table-view .column-header#colName .label, .table-view .column-header#colAddress .label{
+    -fx-alignment:CENTER_LEFT;
+}
+
+.table-view .table-row-cell:filled:hover{
+    -fx-cursor:hand;
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, white 0%, #f2cc19 50%, white 100%);
+}
+
+.table-view .table-row-cell:selected .table-cell{
+    -fx-cursor:hand;
+    -fx-text-fill: black !important;
+}
+
+.table-view .column-header#colSalary .label{
+    -fx-alignment:CENTER_RIGHT;
+}

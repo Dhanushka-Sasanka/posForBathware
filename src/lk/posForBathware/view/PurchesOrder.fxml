@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="661.0" prefWidth="1120.0" style="-fx-background-color: transparent;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.posForBathware.controller.PurchesOrderController">
+    <stylesheets>
+        <URL value="@/lk/ijse/posForBathware/style/purchesorder.css" />
+    </stylesheets>
+    <children>
+        <ImageView fitHeight="661.0" fitWidth="1120.0" layoutY="2.0" opacity="0.3" pickOnBounds="true">
+            <image>
+                <Image url="@../image/web-wallpapers-30800-6185966.jpg" />
+            </image>
+        </ImageView>
+        <Pane layoutX="411.0" layoutY="14.0" prefHeight="137.0" prefWidth="244.0">
+            <children>
+                <JFXComboBox fx:id="customerCmbo" layoutX="58.0" layoutY="44.0" onAction="#customerSelectCombo" prefHeight="25.0" prefWidth="155.0" promptText="-- Cash / Credit --" stylesheets="@../style/managecustomerform.css">
+               <styleClass>
+                  <String fx:value="table-cell" />
+                  <String fx:value="table-row-cell" />
+                  <String fx:value="table-view" />
+               </styleClass></JFXComboBox>
+                <Label alignment="CENTER" layoutX="20.0" layoutY="-3.0" prefHeight="32.0" prefWidth="166.0" text="Select Customer" underline="true">
+                    <padding>
+                        <Insets left="30.0" />
+                    </padding>
+                    <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="27.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/Add%20User%20Male_48px.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Label>
+            </children>
+        </Pane>
+        <VBox alignment="CENTER" layoutX="569.0" layoutY="15.0" prefHeight="252.0" prefWidth="244.0" spacing="15.0" AnchorPane.rightAnchor="14.0">
+            <children>
+                <Label alignment="TOP_LEFT" prefHeight="32.0" prefWidth="220.0" text="Customer Details" underline="true">
+                    <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="42.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/Why%20Us%20Male_48px.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Label>
+                <JFXTextField fx:id="txtReferance" editable="false" labelFloat="true" prefHeight="25.0" prefWidth="175.0" promptText="Referance#" unFocusColor="#0d0d0d">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="txtName" editable="false" labelFloat="true" prefHeight="25.0" prefWidth="175.0" promptText="Name#" unFocusColor="#0d0d0d">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="txtNIC" editable="false" labelFloat="true" prefHeight="25.0" prefWidth="175.0" promptText="NIC#" unFocusColor="#0d0d0d">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="txtMobileNo" editable="false" labelFloat="true" prefHeight="15.0" prefWidth="217.0" promptText="Mobile No#" unFocusColor="#0d0d0d">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </JFXTextField>
+            <JFXTextField fx:id="txtEmail" editable="false" labelFloat="true" layoutX="10.0" layoutY="181.0" prefHeight="15.0" prefWidth="217.0" promptText="E -Mail#" unFocusColor="#0d0d0d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            </children>
+        </VBox>
+        <Separator layoutY="289.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.54" prefHeight="15.0" prefWidth="1120.0" />
+        <ButtonBar layoutX="211.0" layoutY="310.0" prefHeight="40.0" prefWidth="200.0" />
+        <Label layoutX="14.0" layoutY="296.0" prefHeight="32.0" prefWidth="119.0" text="Item List" underline="true">
+            <font>
+                <Font name="Calibri Bold" size="14.0" />
+            </font>
+            <graphic>
+                <ImageView fitHeight="21.0" fitWidth="42.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/Shopping%20Cart%20Loaded_48px_1.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Label>
+        <Label layoutX="23.0" layoutY="13.0" prefHeight="61.0" prefWidth="308.0" text="Purchase Order" textFill="#756314">
+            <font>
+                <Font size="40.0" />
+            </font>
+        </Label>
+      <ListView fx:id="customerListView" layoutX="676.0" layoutY="44.0" prefHeight="126.0" prefWidth="131.0" style="-fx-background-color: transparent;" stylesheets="@../style/managecustomerform.css">
+         <styleClass>
+            <String fx:value="table-view" />
+            <String fx:value="table-row-cell" />
+            <String fx:value="table-cell" />
+         </styleClass></ListView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="669.0" layoutY="11.0" prefHeight="32.0" prefWidth="138.0" text="Customer Referance" underline="true">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="searchCombo" layoutX="74.0" layoutY="178.0" onMouseClicked="#mouseClicked" prefHeight="25.0" prefWidth="166.0" promptText="Search Items" stylesheets="@../style/managecustomerform.css">
+         <styleClass>
+            <String fx:value="table-view" />
+            <String fx:value="table-cell" />
+            <String fx:value="table-row-cell" />
+         </styleClass></JFXComboBox>
+      <JFXButton fx:id="btnRefresh" contentDisplay="GRAPHIC_ONLY" layoutX="311.0" layoutY="30.0" onAction="#btnrefreshAction" prefHeight="27.0" prefWidth="29.0" stylesheets="@../style/supplierform.css" textFill="#fff9f9">
+         <styleClass>
+            <String fx:value="btn-colour2" />
+            <String fx:value="btn" />
+         </styleClass>
+         <graphic>
+            <ImageView fitHeight="19.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Restart_24px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <TableView fx:id="orderTable" editable="true" layoutX="39.0" layoutY="338.0" onKeyPressed="#orderTableKeyPressed" prefHeight="252.0" prefWidth="883.0" style="-fx-background-color: transparent;" stylesheets="@../style/managecustomerform.css">
+         <columns>
+            <TableColumn fx:id="columnBatch" prefWidth="101.0" text="Batch ID#" />
+            <TableColumn prefWidth="127.0" text="Item Code#" />
+            <TableColumn prefWidth="148.0" text="Discription#" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="157.0" text="Unit Price#" />
+            <TableColumn fx:id="colQty" minWidth="0.0" prefWidth="151.0" text="Qty#" />
+            <TableColumn prefWidth="198.0" text="Amount#" />
+         </columns>
+         <columnResizePolicy>
+           
+         </columnResizePolicy>
+         <styleClass>
+            <String fx:value="column-header" />
+            <String fx:value="table-cell" />
+            <String fx:value="table-row-cell" />
+            <String fx:value="table-view" />
+         </styleClass>
+      </TableView>
+      <JFXComboBox fx:id="comboBatchId" editable="true" layoutX="74.0" layoutY="248.0" onAction="#comboBatchId" prefHeight="25.0" prefWidth="166.0" promptText="Batch ID" stylesheets="@../style/managecustomerform.css">
+         <styleClass>
+            <String fx:value="table-view" />
+            <String fx:value="table-cell" />
+            <String fx:value="table-row-cell" />
+         </styleClass></JFXComboBox>
+      <JFXTextField fx:id="txtDiscription" labelFloat="true" layoutX="286.0" layoutY="182.0" prefHeight="29.0" prefWidth="166.0" promptText="Description" unFocusColor="#070707">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtUnitPrice" editable="false" labelFloat="true" layoutX="498.0" layoutY="182.0" prefHeight="25.0" prefWidth="119.0" promptText="Unit Price" unFocusColor="#070707">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtQtyOnHand" editable="false" labelFloat="true" layoutX="661.0" layoutY="182.0" prefHeight="25.0" prefWidth="119.0" promptText="QtyOnHand" unFocusColor="#070707">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnAddToCart" buttonType="RAISED" layoutX="653.0" layoutY="248.0" onAction="#btnAddToCartAction" prefHeight="32.0" prefWidth="178.0" style="-fx-background-color: #5BC0DE;" text="ADD TO CART " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtOrderUnitprice" labelFloat="true" layoutX="286.0" layoutY="240.0" prefHeight="39.0" prefWidth="166.0" promptText="unitprice" unFocusColor="#070707">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtOrderQty" labelFloat="true" layoutX="492.0" layoutY="246.0" prefHeight="29.0" prefWidth="131.0" promptText="Qty" unFocusColor="#070707">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtTotal" labelFloat="true" layoutX="934.0" layoutY="608.0" prefHeight="39.0" prefWidth="166.0" promptText="Total / Rs" unFocusColor="#070707">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="653.0" layoutY="615.0" onAction="#SaveBtnAction" prefHeight="32.0" prefWidth="178.0" style="-fx-background-color: #5BC0DE;" text="SAVE " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXDatePicker fx:id="orderDate" defaultColor="#5bc0de" editable="false" layoutX="289.0" layoutY="108.0" prefHeight="28.0" prefWidth="166.0" />
+      <JFXTextField fx:id="txtInvoiceNo" labelFloat="true" layoutX="74.0" layoutY="111.0" prefHeight="30.0" prefWidth="166.0" promptText="Invoice No " unFocusColor="#070707">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnExit" buttonType="RAISED" layoutX="23.0" layoutY="612.0" onAction="#ExitBtnAction" prefHeight="32.0" prefWidth="119.0" style="-fx-background-color: #5BC0DE;" text="EXIT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+    </children>
+</AnchorPane>

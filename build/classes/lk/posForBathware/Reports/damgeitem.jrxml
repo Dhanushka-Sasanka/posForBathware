@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2018-07-29T05:19:44 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="damgeitem" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c219c41a-7e60-4f84-8f2a-86c87764ac1e">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="damged"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<parameter name="date" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select * from DamageDetail]]>
+	</queryString>
+	<field name="DamegeID" class="java.lang.String"/>
+	<field name="Itemcode" class="java.lang.String"/>
+	<field name="Discription" class="java.lang.String"/>
+	<field name="qty" class="java.lang.Integer"/>
+	<field name="date" class="java.sql.Date"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="59" splitType="Stretch">
+			<staticText>
+				<reportElement x="20" y="0" width="187" height="31" forecolor="#496CEB" uuid="b63a12b2-11f8-4507-a8ac-4e561708c49f"/>
+				<textElement>
+					<font size="24" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Damage Items]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="460" y="0" width="100" height="20" uuid="51f718a2-0c5c-4b6f-8ae8-37f47bb370b2"/>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#FC6865"/>
+					<bottomPen lineWidth="1.0" lineColor="#FF6966"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="111" height="30" forecolor="#000000" uuid="38899bee-8e2d-45e3-9886-fdb5b35e4da2"/>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#FC6865"/>
+					<bottomPen lineWidth="1.0" lineColor="#FF6966"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DamegeID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="0" width="111" height="30" forecolor="#000000" uuid="09210858-684f-47d6-9a64-ab10a57dcc28"/>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#FC6865"/>
+					<bottomPen lineWidth="1.0" lineColor="#FF6966"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Itemcode]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="222" y="0" width="111" height="30" forecolor="#000000" uuid="c518b0f6-4b44-4bb0-a4b3-8d3710741b9a"/>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#FC6865"/>
+					<bottomPen lineWidth="1.0" lineColor="#FF6966"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Discription]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="333" y="0" width="111" height="30" forecolor="#000000" uuid="e1f64932-1df3-48e4-8609-bc11a6a8b553"/>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#FC6865"/>
+					<bottomPen lineWidth="1.0" lineColor="#FF6966"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Qty]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="0" width="111" height="30" forecolor="#000000" uuid="e6ec31f8-8c98-4285-af2b-23fd3df8f708"/>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#FC6865"/>
+					<bottomPen lineWidth="1.0" lineColor="#FF6966"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="32" splitType="Stretch">
+			<textField>
+				<reportElement x="-2" y="10" width="111" height="22" uuid="8ecd5b18-7165-4353-b6d9-8963248b4674"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{DamegeID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="109" y="10" width="111" height="22" uuid="1360784b-859d-4fa2-a5b0-0ad81c3d2dae"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Itemcode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="10" width="111" height="22" uuid="8f569d39-fb4d-40eb-8443-87194ce67cf9"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Discription}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="331" y="10" width="111" height="22" uuid="2c473f84-3da3-45a1-9b3e-f6af9b1dbcb2"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{qty}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="442" y="10" width="111" height="22" uuid="bc391db9-6b9b-4e7d-8bad-d0886929e0bb"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

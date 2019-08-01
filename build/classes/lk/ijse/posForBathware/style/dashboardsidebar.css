@@ -1,0 +1,53 @@
+
+.sideBar{
+    -fx-background-color: rgb(58,69,88);
+
+
+}
+.sideBar-user-btn{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+    -fx-text-fill: #b8b1b1;
+}
+.sideBarLogo{
+  
+
+}
+.sideBar-user-btns{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+    -fx-text-fill: #b8b1b1;
+    -fx-border-color: rgb(22,169,250);
+    -fx-border-width: 0px,2px,0px,0px ;
+    
+}
+.sideBarLogoRotation{
+    animation-duration: 10s;
+    transform:rotateY(10deg);
+    transform:rotateY(20deg);
+    transform:rotateY(30deg);
+    transform:rotateY(40deg);
+    transform:rotateY(50deg);
+    transform:rotateY(60deg);
+    transform:rotateY(70deg);
+    transform:rotateY(80deg);
+    transform:rotateY(90deg);
+    transform:rotateY(100deg);
+    transform:rotateY(110deg);
+    transform:rotateY(120deg);
+    transform:rotateY(130deg);
+    transform:rotateY(140deg);
+    transform:rotateY(150deg);
+    transform:rotateY(160deg);
+    transform:rotateY(170deg);
+    transform:rotateY(180deg);
+    transform:rotateY(190deg);
+    
+    
+}
+@keyframes example{
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}

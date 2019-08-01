@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<HBox id="Hbox" prefHeight="75.0" prefWidth="1366.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="lk.ijse.posForBathware.controller.TopBarController">
+    <stylesheets>
+        <URL value="@/lk/ijse/posForBathware/style/topbar.css" />
+    </stylesheets>
+   <children>
+      <HBox id="Hbox" styleClass="mainFxmlClass">
+         <stylesheets>
+            <URL value="@/lk/ijse/posForBathware/style/topbar.css" />
+         </stylesheets>
+         <children>
+            <JFXButton contentDisplay="RIGHT" prefHeight="75.0" prefWidth="68.0" styleClass="sideBar-user-btn" stylesheets="@../style/topbar.css" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/List_24px.png" />
+                     </image>
+                     <styleClass>
+                        <String fx:value="menu-Bar-btn-icon" />
+                        <String fx:value="sideBar-user-btn" />
+                     </styleClass>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox prefHeight="65.0" prefWidth="378.0">
+         <children>
+            <Pane prefHeight="65.0" prefWidth="302.0">
+               <children>
+                  <Pane prefHeight="37.0" prefWidth="0.0" />
+                  <ImageView fitHeight="37.0" fitWidth="56.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/Search_48px_2.png" />
+                     </image>
+                  </ImageView>
+                  <JFXTextField layoutX="51.0" layoutY="14.0" prefHeight="38.0" prefWidth="937.0" promptText="Search Anything that you want">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+               <opaqueInsets>
+                  <Insets right="20.0" />
+               </opaqueInsets>
+            </Pane>
+            <Pane prefHeight="65.0" prefWidth="487.0">
+               <children>
+                  <Label layoutX="76.0" layoutY="13.0" prefHeight="38.0" prefWidth="102.0" text="User Is Online">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="37.0" fitWidth="56.0" layoutX="39.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/Administrator%20Male_48px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="23.0" fitWidth="20.0" layoutX="14.0" layoutY="24.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/Connection%20Status%20On_48px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <HBox.margin>
+                  <Insets left="1120.0" />
+               </HBox.margin>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets right="10.0" />
+   </padding>
+</HBox>

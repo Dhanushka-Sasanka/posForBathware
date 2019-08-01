@@ -1,0 +1,21 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.btn-colour{
+    -fx-background-color:#2aff00; 
+    
+}
+.btn :hover{
+    -fx-background-color: transparent;
+    
+}
+.btn-colour2{
+    -fx-background-color:#ff9d00; 
+    
+}
+
+.btn-Hover:hover {
+    -fx-backround-radious: 5%;
+
+}

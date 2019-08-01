@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="661.0" prefWidth="1120.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.posForBathware.controller.GrnFromController">
+    <stylesheets>
+        <URL value="@/lk/posForBathware/style/grnfrom.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="661.0" fitWidth="1120.0" opacity="0.4" pickOnBounds="true">
+         <image>
+            <Image url="@../image/acc.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="36.0" layoutY="127.0" prefHeight="503.0" prefWidth="431.0">
+         <children>
+            <JFXTextField fx:id="txtBatchId" focusColor="#1a13fc" labelFloat="true" prefHeight="34.0" prefWidth="149.0" promptText="Batch ID" style="-fx-background-color: transparent;" unFocusColor="BLACK">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXTextField>
+            <JFXTextField fx:id="txtDiscription" focusColor="#1a13fc" labelFloat="true" layoutY="67.0" prefHeight="34.0" prefWidth="378.0" promptText="Discription GRN (Optional)" unFocusColor="BLACK">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXTextField>
+            <JFXTextField fx:id="txtGrnId" focusColor="#1a13fc" labelFloat="true" layoutX="228.0" prefHeight="34.0" prefWidth="149.0" promptText="G.R.N ID" unFocusColor="BLACK">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXTextField>
+            <JFXButton layoutX="155.0" layoutY="9.0" prefHeight="17.0" prefWidth="40.0" stylesheets="@../style/addcustomerform.css" text="Find">
+               <styleClass>
+                  <String fx:value="btn-colour2" />
+                  <String fx:value="btn" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton layoutX="383.0" layoutY="9.0" prefHeight="17.0" prefWidth="40.0" stylesheets="@../style/addcustomerform.css" text="Find">
+               <styleClass>
+                  <String fx:value="btn-colour2" />
+                  <String fx:value="btn" />
+               </styleClass>
+            </JFXButton>
+            <JFXTextField fx:id="txtUnitPrice" focusColor="#1a13fc" labelFloat="true" layoutY="136.0" prefHeight="34.0" prefWidth="149.0" promptText="Unit Price" unFocusColor="BLACK">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXTextField>
+            <JFXTextField fx:id="txtQty" focusColor="#1a13fc" labelFloat="true" layoutX="223.0" layoutY="136.0" prefHeight="34.0" prefWidth="157.0" promptText="Qty" unFocusColor="BLACK">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXTextField>
+            <JFXTextField fx:id="txtItemCode" focusColor="#1a13fc" labelFloat="true" layoutX="1.0" layoutY="197.0" prefHeight="34.0" prefWidth="378.0" promptText="Item Code" unFocusColor="BLACK">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXTextField>
+            <JFXTextField fx:id="txtItemDiscription" focusColor="#1a13fc" labelFloat="true" layoutX="2.0" layoutY="262.0" prefHeight="34.0" prefWidth="378.0" promptText="Discripiton Item" unFocusColor="BLACK">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXTextField>
+            <JFXButton fx:id="brnAddTable" layoutX="70.0" layoutY="428.0" onAction="#btnAddTable" prefHeight="34.0" prefWidth="242.0" stylesheets="@../style/addcustomerform.css" text="ADD TO LIST">
+               <styleClass>
+                  <String fx:value="btn-colour2" />
+                  <String fx:value="btn" />
+               </styleClass>
+            </JFXButton>
+            <JFXTextField fx:id="txtBrand" focusColor="#1a13fc" labelFloat="true" layoutY="332.0" prefHeight="34.0" prefWidth="288.0" promptText="Item Brand" unFocusColor="BLACK">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXTextField>
+         </children>
+      </Pane>
+      <Label layoutX="55.0" layoutY="50.0" prefHeight="55.0" prefWidth="422.0" text="G.R.N  Details " textFill="#756314">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <TableView fx:id="grnTable" layoutX="489.0" layoutY="142.0" prefHeight="335.0" prefWidth="613.0" style="-fx-background-color: transparent;" tableMenuButtonVisible="true">
+         <columns>
+            <TableColumn fx:id="batchIDCol" prefWidth="75.0" text="Batch ID" />
+            <TableColumn fx:id="grnIdCol" prefWidth="75.0" text="GRN ID" />
+            <TableColumn fx:id="itemCodeCol" prefWidth="75.0" text="Item Code" />
+            <TableColumn fx:id="disCol" prefWidth="75.0" text="Discription" />
+            <TableColumn fx:id="unitPriceCol" prefWidth="174.0" text="Unit Price" />
+            <TableColumn fx:id="qtyCol" prefWidth="75.0" sortType="DESCENDING" text="Qty" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <JFXButton layoutX="952.0" layoutY="560.0" prefHeight="33.0" prefWidth="134.0" stylesheets="@../style/addcustomerform.css" text="Remove">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="btn-colour" />
+            <String fx:value="btn" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton layoutX="752.0" layoutY="560.0" prefHeight="33.0" prefWidth="134.0" text="Update">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="btn-colour" />
+            <String fx:value="btn" />
+            <String fx:value="btn-Hover" />
+         </styleClass>
+         <stylesheets>
+            <URL value="@../style/addcustomerform.css" />
+            <URL value="@../style/grnfrom.css" />
+         </stylesheets>
+      </JFXButton>
+      <JFXButton layoutX="1005.0" layoutY="107.0" prefHeight="25.0" prefWidth="81.0" stylesheets="@../style/addcustomerform.css" text="View All">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <styleClass>
+            <String fx:value="btn-colour" />
+            <String fx:value="btn" />
+         </styleClass>
+      </JFXButton>
+      <JFXDatePicker fx:id="grnDate" defaultColor="#184eff" editable="false" layoutX="879.0" layoutY="33.0" prefHeight="28.0" prefWidth="160.0" />
+      <JFXButton fx:id="btnInsert" layoutX="544.0" layoutY="560.0" onAction="#insertBtnAction" prefHeight="39.0" prefWidth="134.0" stylesheets="@../style/addcustomerform.css" text="Insert">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="btn-colour" />
+            <String fx:value="btn" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton fx:id="homeBtn" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="55.0" layoutY="14.0" onAction="#btnHomeAction" prefHeight="34.0" prefWidth="37.0" style="-fx-background-radius: 80%; -fx-background-color: #ff3030;" styleClass="btn" stylesheets="@../style/supplierform.css" text=" ">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Sell%20Property_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnRefresh" contentDisplay="GRAPHIC_ONLY" layoutX="131.0" layoutY="16.0" onAction="#btnrefreshAction" prefHeight="30.0" prefWidth="37.0" stylesheets="@../style/supplierform.css">
+         <styleClass>
+            <String fx:value="btn-colour2" />
+            <String fx:value="btn" />
+         </styleClass>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Restart_24px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

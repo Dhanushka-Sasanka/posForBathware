@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="mainAnchor" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.posForBathware.controller.LoginFormController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="706.0">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="706.0" opacity="0.7" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../image/login.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="194.0" layoutY="14.0" prefHeight="44.0" prefWidth="253.0" text="Welecome To" textFill="#4d4af2">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="279.0" layoutY="50.0" prefHeight="45.0" prefWidth="76.0" text="Core-" textFill="#ff2222">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="88.0" fitWidth="89.0" layoutY="313.0" onMouseEntered="#mouseEnterd" onMouseExited="#mouseExited" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/images.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="355.0" layoutY="50.0" prefHeight="45.0" prefWidth="68.0" text="Biz" textFill="#ff8c24">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="closeBtn" fitHeight="27.0" fitWidth="31.0" layoutX="676.0" layoutY="1.0" onMouseClicked="#closeBtn" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Close%20Window_48px.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="338.0" layoutY="110.0" prefHeight="272.0" prefWidth="325.0">
+               <children>
+                  <JFXPasswordField fx:id="txtPassword" focusColor="#ff9d00" labelFloat="true" layoutX="42.0" layoutY="100.0" prefHeight="25.0" prefWidth="217.0" promptText="Password" unFocusColor="BLACK">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXTextField fx:id="txtUserName" focusColor="#ff9d00" labelFloat="true" layoutX="41.0" layoutY="37.0" prefHeight="33.0" prefWidth="217.0" promptText="User Name" unFocusColor="#0a0000">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXTextField>
+                  <ImageView fitHeight="37.0" fitWidth="31.0" layoutX="2.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Person%20Male_48px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="37.0" fitWidth="27.0" layoutX="2.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Forgot%20Password_52px.png" />
+                     </image>
+                  </ImageView>
+                  <JFXCheckBox checkedColor="#4fff1a" layoutX="42.0" layoutY="155.0" prefHeight="18.0" prefWidth="145.0" text="Remember me" />
+                  <JFXButton graphicTextGap="10.0" layoutX="163.0" layoutY="204.0" onAction="#loginBtn" prefHeight="39.0" prefWidth="127.0" stylesheets="@../style/addcustomerform.css" text="Login">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="btn-colour" />
+                        <String fx:value="btn" />
+                     </styleClass>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="515.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Unlock_52px_1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

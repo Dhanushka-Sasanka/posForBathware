@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.DropdownButton?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="221.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.posForBathware.controller.DashBoardSideBarController">
+   <children>
+      <Pane layoutX="6.0" layoutY="81.0" prefHeight="42.0" prefWidth="196.0">
+         <children>
+            <DropdownButton layoutX="158.0" layoutY="8.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="27.0" prefWidth="0.0">
+                <items>
+                    <MenuItem text=" customers">
+                     <graphic>
+                        <JFXButton prefHeight="42.0" prefWidth="132.0" text="dadada" />
+                     </graphic>
+                  </MenuItem>
+                    <MenuItem text="Choice 2">
+                     <graphic>
+                        <JFXButton prefHeight="42.0" prefWidth="132.0" text="123">
+                           <graphic>
+                              <JFXButton prefHeight="42.0" prefWidth="132.0" text="Xaxax" />
+                           </graphic></JFXButton>
+                     </graphic>
+                  </MenuItem>
+                    <MenuItem text="Choice 3">
+                     <graphic>
+                        <JFXButton prefHeight="42.0" prefWidth="132.0" text="123" />
+                     </graphic>
+                  </MenuItem>
+                </items>
+            </DropdownButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="341.0" prefWidth="706.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="lk.ijse.posForBathware.controller.LoginFROMController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="706.0">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="802.0" layoutX="-96.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../assest/login.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

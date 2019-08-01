@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="661.0" prefWidth="1120.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.posForBathware.controller.ContactController">
+    <stylesheets>
+        <URL value="@/lk/posForBathware/style/contact.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="661.0" fitWidth="1120.0" opacity="0.3" pickOnBounds="true">
+         <image>
+            <Image url="@../image/ecommerce_background_1500x800.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="118.0" layoutY="105.0" onMouseClicked="#lblCustomerClicked" onMouseEntered="#lblEnterd" onMouseExited="#lblExited" prefHeight="457.0" prefWidth="335.0" styleClass="cerclePanel" stylesheets="@../style/contact.css">
+         <children>
+            <ImageView fitHeight="373.0" fitWidth="337.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../image/user-3.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="36.0" layoutY="396.0" prefHeight="56.0" prefWidth="276.0" text="New Customer " textFill="#756314">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="609.0" layoutY="99.0" onMouseClicked="#lblSupplierClicked" onMouseEntered="#lblEnterd" onMouseExited="#lblExited" prefHeight="457.0" prefWidth="335.0" styleClass="cerclePanel" stylesheets="@../style/contact.css">
+         <children>
+            <ImageView fitHeight="373.0" fitWidth="337.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../image/user-12.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="36.0" layoutY="396.0" prefHeight="56.0" prefWidth="276.0" text="New Supplier" textFill="#756314">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Separator layoutX="537.0" layoutY="29.0" orientation="VERTICAL" prefHeight="555.0" prefWidth="3.0" />
+   </children>
+</AnchorPane>

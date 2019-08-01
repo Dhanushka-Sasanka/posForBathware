@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="661.0" prefWidth="1120.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.posForBathware.controller.LoadingPageController">
+    <stylesheets>
+        <URL value="@/lk/ijse/posForBathware/style/loadingpage.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="471.0" layoutY="362.0" prefHeight="43.0" prefWidth="184.0" text="Core-Biz loading ....." textFill="#1e74eb">
+         <font>
+            <Font name="Aparajita Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="207.0" fitWidth="266.0" layoutX="419.0" layoutY="157.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../image/SereneScratchyComet.gif" />
+         </image>
+      </ImageView>
+     
+      
+   </children>
+</AnchorPane>

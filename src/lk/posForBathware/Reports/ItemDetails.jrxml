@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2018-07-29T06:52:02 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ItemDetails" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1440718c-baa6-4b7d-9be2-0c1dd5180ecb">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="damged"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[select itemDetail.BatchId , Item.ItemCode ,Item.Brand , Item.Discription , Item.qtyOnhand ,Item.unitprice  from item inner Join itemDetail on item.itemCode = itemDetail.itemCode]]>
+	</queryString>
+	<field name="BatchId" class="java.lang.String"/>
+	<field name="ItemCode" class="java.lang.String"/>
+	<field name="Brand" class="java.lang.String"/>
+	<field name="Discription" class="java.lang.String"/>
+	<field name="qtyOnhand" class="java.lang.Integer"/>
+	<field name="unitprice" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="20" y="0" width="180" height="40" forecolor="#496CEB" uuid="2369c251-3b18-4f56-8d07-0cd910cda3f0"/>
+				<textElement>
+					<font size="24" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Item Details]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="32" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="95" height="30" uuid="94f3a349-afa4-44ce-8a18-a11fd8fc2c62"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BatchId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="95" y="0" width="92" height="30" uuid="a5fff846-e55e-4828-9309-d95822e520b6"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ItemCode]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="187" y="0" width="92" height="30" uuid="b176cd1d-3e2e-4c7b-91cd-f24c09ca3dd2"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Brand]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="0" width="92" height="30" uuid="d65d0a35-15c6-4e5f-a627-5b8f58351faf"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Discription]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="371" y="0" width="92" height="30" uuid="8aa595f0-d84e-416c-9081-4c02a2323f0d"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[QtyOnhand]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="463" y="0" width="92" height="30" uuid="31bf7af6-e754-4aa7-a806-f572890ff1f3"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Unitprice]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="36" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="2" width="95" height="30" uuid="00292bc1-d030-40b1-be43-4aa4f5412789"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{BatchId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="95" y="2" width="92" height="30" uuid="4a118254-044b-4113-8f47-7d455b221378"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ItemCode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="187" y="2" width="92" height="30" uuid="4afecbd5-ab2b-482c-a8f2-bf4b6deca7fd"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Brand}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="2" width="92" height="30" uuid="9b3639c9-ee77-4f9d-8fbe-19e805b7c84a"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Discription}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="371" y="2" width="92" height="30" uuid="851e07d8-238a-4ea5-80ee-87212a5ecd58"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{qtyOnhand}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="463" y="2" width="92" height="30" uuid="6dc4e30f-64be-4837-a633-d58ef1a1f000"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{unitprice}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2018-07-29T06:42:16 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CrditCustomers" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8d084fa8-bab8-473e-aaa5-2125e0e4f618">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="damged"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[select * from ccustomer
+]]>
+	</queryString>
+	<field name="CustomerId" class="java.lang.String"/>
+	<field name="CustomerName" class="java.lang.String"/>
+	<field name="NIC" class="java.lang.String"/>
+	<field name="TeleNo" class="java.lang.Integer"/>
+	<field name="Email" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="20" y="0" width="290" height="40" forecolor="#496CEB" uuid="01999d92-e16c-43b0-b215-6797889f9670"/>
+				<textElement>
+					<font size="24" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Credit Customer Details]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="111" height="30" uuid="72b570d7-e90e-49c8-b16a-ed308bb35923"/>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#DE6866"/>
+					<bottomPen lineWidth="1.0" lineColor="#DE6866"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CustomerId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="0" width="111" height="30" uuid="5bb95f56-83d6-4c93-9f9b-0eb20abf7aeb"/>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#DE6866"/>
+					<bottomPen lineWidth="1.0" lineColor="#DE6866"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CustomerName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="222" y="0" width="111" height="30" uuid="ac6f696a-48fd-4945-8baa-033d8023bc36"/>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#DE6866"/>
+					<bottomPen lineWidth="1.0" lineColor="#DE6866"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NIC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="333" y="0" width="111" height="30" uuid="86590b53-0bff-4fa8-bd20-c7b86c374ddc"/>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#DE6866"/>
+					<bottomPen lineWidth="1.0" lineColor="#DE6866"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TeleNo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="0" width="111" height="30" uuid="dc141974-17ed-48f8-a914-ce53a02b4b04"/>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#DE6866"/>
+					<bottomPen lineWidth="1.0" lineColor="#DE6866"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="111" height="30" uuid="4d3c8a45-6930-4502-9326-5037a4ecd6e7"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{CustomerId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="0" width="111" height="30" uuid="3031e777-426a-44d8-be0b-a07b5e155037"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{CustomerName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="0" width="111" height="30" uuid="60e1457c-89dd-4bed-a0c0-7f6a1ec39c2a"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{NIC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="333" y="0" width="111" height="30" uuid="15f24183-e963-4921-b329-e4af5b4bed77"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{TeleNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="444" y="0" width="111" height="30" uuid="ba71832c-a390-4b6f-93a7-183f0679596b"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Email}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

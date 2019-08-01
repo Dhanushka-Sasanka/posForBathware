@@ -1,0 +1,33 @@
+
+.sideBar{
+    -fx-background-color: rgb(58,69,88);
+
+
+}
+.btn:hover{
+    -fx-background-color:silver;
+    
+    
+}
+.sideBar-user-btn{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+    -fx-text-fill: #b8b1b1;
+}
+.sideBarLogo{
+  
+
+}
+.sideBar-user-btns{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+    -fx-text-fill: #b8b1b1;
+    -fx-border-color: rgb(22,169,250);
+    -fx-border-width: 0px,2px,0px,0px ;
+    
+}
+
+/*.voxPnanl:hover{
+      //-fx-background-color: B1DE84;
+      -fx-background-radius: 5px;
+}*/

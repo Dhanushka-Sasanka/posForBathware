@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1149.0" style="-fx-background-color: #52ffd3;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.posForBathware.controller.PurchesOrderController">
+    <stylesheets>
+        <URL value="@/lk/ijse/posForBathware/style/purchesorder.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutX="311.0" layoutY="14.0" prefHeight="97.0" prefWidth="308.0">
+         <children>
+            <JFXComboBox fx:id="customerCmbo" layoutX="36.0" layoutY="41.0" prefHeight="25.0" prefWidth="264.0" promptText="-- Cash / Credit --" />
+            <Label alignment="CENTER" layoutX="-13.0" layoutY="-2.0" prefHeight="32.0" prefWidth="158.0" text="Select Customer" underline="true">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="42.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/Why%20Us%20Male_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </Pane>
+      <VBox alignment="CENTER" layoutX="569.0" layoutY="11.0" prefHeight="200.0" prefWidth="217.0" spacing="15.0" AnchorPane.rightAnchor="14.0">
+         <children>
+            <Label alignment="TOP_LEFT" prefHeight="32.0" prefWidth="220.0" text="Customer Details" underline="true">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="42.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/Why%20Us%20Male_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <JFXTextField labelFloat="true" prefHeight="25.0" prefWidth="175.0" promptText="Referance#">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField labelFloat="true" prefHeight="25.0" prefWidth="175.0" promptText="Name#">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField labelFloat="true" prefHeight="25.0" prefWidth="175.0" promptText="Address#">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField labelFloat="true" prefHeight="25.0" prefWidth="175.0" promptText="Date#">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </VBox>
+      <Separator layoutY="234.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.54" prefHeight="15.0" prefWidth="1358.0" />
+      <ButtonBar layoutX="211.0" layoutY="310.0" prefHeight="40.0" prefWidth="200.0" />
+      <TableView editable="true" layoutX="14.0" layoutY="330.0" prefHeight="200.0" prefWidth="875.0">
+        <columns>
+          <TableColumn prefWidth="71.0" text="Batch ID#" />
+          <TableColumn prefWidth="76.0" text="Item Code#" />
+            <TableColumn prefWidth="147.0" text="Discription#" />
+            <TableColumn prefWidth="81.0" text="Unit Price#" />
+            <TableColumn prefWidth="89.0" text="Discount#" />
+            <TableColumn minWidth="0.0" prefWidth="100.0" text="Qty#" />
+            <TableColumn prefWidth="102.0" text="Amount#" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <JFXButton layoutX="489.0" layoutY="117.0">
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+      </JFXButton>
+      <Label layoutX="14.0" layoutY="294.0" prefHeight="32.0" prefWidth="119.0" text="Item List" underline="true">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="21.0" fitWidth="42.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/Shopping%20Cart%20Loaded_48px_1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+   </children>
+</AnchorPane>

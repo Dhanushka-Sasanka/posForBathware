@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="661.0" prefWidth="1120.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.posForBathware.controller.SupplierOrderFormController">
+   <stylesheets>
+      <URL value="@/lk/posForBathware/style/damageform.css" />
+   </stylesheets>
+   <children>
+      <ImageView fitHeight="661.0" fitWidth="1120.0" opacity="0.3" pickOnBounds="true">
+         <image>
+            <Image url="@../image/acc.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="55.0" layoutY="47.0" prefHeight="62.0" prefWidth="426.0" text="Supplier Order Details " textFill="#756314">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Pane layoutX="80.0" layoutY="147.0" prefHeight="467.0" prefWidth="393.0">
+         <children>
+            <JFXTextField focusColor="#1a13fc" labelFloat="true" prefHeight="34.0" prefWidth="234.0" promptText="Supplier Order ID" unFocusColor="BLACK">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="30.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXTextField>
+            <JFXTextField focusColor="#1a13fc" labelFloat="true" layoutY="67.0" prefHeight="34.0" prefWidth="363.0" promptText="Item Code" unFocusColor="BLACK">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="30.0" top="10.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXTextField>
+            <JFXTextField focusColor="#1a13fc" labelFloat="true" layoutX="2.0" layoutY="144.0" prefHeight="25.0" prefWidth="363.0" promptText="Qty On Hand" unFocusColor="BLACK">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="30.0" top="10.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXTextField>
+            <JFXTextField focusColor="#1a13fc" labelFloat="true" layoutY="221.0" prefHeight="25.0" prefWidth="363.0" promptText="Ordern Qty" unFocusColor="BLACK">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="30.0" top="10.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXTextField>
+            <JFXButton layoutX="258.0" layoutY="14.0" prefHeight="25.0" prefWidth="60.0" stylesheets="@../style/addcustomerform.css" text="Find">
+               <styleClass>
+                  <String fx:value="btn-colour2" />
+                  <String fx:value="btn" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton fx:id="btnRefresh" contentDisplay="GRAPHIC_ONLY" layoutX="18.0" layoutY="419.0" onAction="#btnrefreshAction" prefHeight="30.0" prefWidth="37.0" stylesheets="@../style/supplierform.css">
+               <styleClass>
+                  <String fx:value="btn-colour2" />
+                  <String fx:value="btn" />
+               </styleClass>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Restart_24px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="brnAddTable" layoutX="117.0" layoutY="419.0" onAction="#btnAddTable" prefHeight="34.0" prefWidth="188.0" stylesheets="@../style/addcustomerform.css" text="ADD TO LIST">
+               <styleClass>
+                  <String fx:value="btn-colour2" />
+                  <String fx:value="btn" />
+               </styleClass>
+            </JFXButton>
+         </children>
+      </Pane>
+      <JFXButton layoutX="925.0" layoutY="555.0" prefHeight="33.0" prefWidth="134.0" stylesheets="@../style/addcustomerform.css" text="Remove">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="btn-colour" />
+            <String fx:value="btn" />
+         </styleClass>
+      </JFXButton>
+      <TableView layoutX="471.0" layoutY="147.0" prefHeight="368.0" prefWidth="594.0" style="-fx-background-color: transparent;">
+         <columns>
+            <TableColumn minWidth="130.0" prefWidth="130.0" text="Order ID" />
+            <TableColumn minWidth="130.0" prefWidth="130.0" text="Item Code" />
+            <TableColumn minWidth="170.0" prefWidth="170.0" text="Date" />
+            <TableColumn minWidth="170.0" prefWidth="170.0" text="Qty" />
+         </columns>
+      </TableView>
+      <JFXDatePicker defaultColor="#184eff" layoutX="861.0" layoutY="53.0" prefHeight="28.0" prefWidth="209.0" promptText="Date" />
+      <JFXButton layoutX="956.0" layoutY="109.0" prefHeight="30.0" prefWidth="103.0" stylesheets="@../style/addcustomerform.css" text="View All">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <styleClass>
+            <String fx:value="btn-colour" />
+            <String fx:value="btn" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton layoutX="768.0" layoutY="555.0" prefHeight="33.0" prefWidth="134.0" stylesheets="@../style/addcustomerform.css" text="Update">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="btn-colour" />
+            <String fx:value="btn" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton layoutX="607.0" layoutY="555.0" prefHeight="33.0" prefWidth="134.0" stylesheets="@../style/addcustomerform.css" text="Insert">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="btn-colour" />
+            <String fx:value="btn" />
+         </styleClass>
+      </JFXButton>
+   </children>
+</AnchorPane>

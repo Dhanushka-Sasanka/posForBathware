@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="signOutAncor" prefHeight="156.0" prefWidth="460.0" style="-fx-background-color: grey;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="lk.posForBathware.controller.SignOutScreenController">
+   <children>
+      <JFXButton fx:id="btnExit" layoutX="267.0" layoutY="78.0" onAction="#btnExitAction" prefHeight="33.0" prefWidth="134.0" stylesheets="@../style/signoutscreen.css" text="Exit ">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="btn-colour" />
+            <String fx:value="btn" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton fx:id="btnSignout" layoutX="59.0" layoutY="78.0" onAction="#btnSignOut" prefHeight="39.0" prefWidth="134.0" stylesheets="@../style/signoutscreen.css" text="Sign-out">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="btn-colour" />
+            <String fx:value="btn" />
+         </styleClass>
+      </JFXButton>
+      <Label layoutX="93.0" layoutY="21.0" prefHeight="31.0" prefWidth="275.0" text="Do you want to Sign-out or Exit ?">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
